@@ -6,7 +6,7 @@ class PokemonForm extends React.Component {
     return (
       <div>
         <h3>Add a Pokemon!</h3>
-        <Form onSubmit={() => {console.log("submitting form...")}}>
+        <Form onSubmit={this.props.addPokemon}>
           <Form.Group widths="equal">
             <Form.Input fluid label="Name" placeholder="Name" name="name" />
             <Form.Input fluid label="hp" placeholder="hp" name="hp" />
@@ -21,3 +21,6 @@ class PokemonForm extends React.Component {
 }
 
 export default PokemonForm
+
+
+
